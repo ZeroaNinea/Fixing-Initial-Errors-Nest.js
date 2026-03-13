@@ -34,3 +34,21 @@ import {defineConfig} from 'eslint/config';
 
 export default defineConfig(...);
 ```
+
+## Fixing `main.ts`
+
+Await the `bootstrap` function instead of calling it synchronously. Replace this:
+
+```ts
+bootstrap();
+```
+
+With this:
+
+```ts
+bootstrap()
+  .then(() =>
+    console.log(` 🚀 Server started on the port ${process.env.PORT ?? 3000}`),
+  )
+  .catch((err) => console.error(err));
+```
