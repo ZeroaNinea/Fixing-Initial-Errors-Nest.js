@@ -24,3 +24,13 @@ Add the `types` property to the `compilerOptions` object to allow VS Code to rec
   }
 }
 ```
+
+## Fixing `eslint.config.mjs`
+
+Replace `tseslint.config` with `defineConfig` imported from `eslint/config`. `tseslint.config` is deprecated.
+
+```mjs
+import {defineConfig} from 'eslint/config';
+
+export default defineConfig(...);
+```
