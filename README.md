@@ -8,7 +8,19 @@ Replce the `baseUrl` property with the `rootDir`. `baseUrl` is deprecated, and i
 
 ```json
 {
-  // "baseUrl": "./",
-  "rootDir": "./src"
+  "compilerOptions": {
+    // "baseUrl": "./",
+    "rootDir": "./src"
+  }
+}
+```
+
+Add the `types` property to the `compilerOptions` object to allow VS Code to recognize Jest test files.
+
+```json
+{
+  "compilerOptions": {
+    "types": ["node", "jest"]
+  }
 }
 ```
