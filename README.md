@@ -52,3 +52,7 @@ bootstrap()
   )
   .catch((err) => console.error(err));
 ```
+
+## Medium Link
+
+[https://medium.com/@heghine.dev357/fixing-common-initial-errors-in-a-nest-js-project-d9683c31e04c](https://medium.com/@heghine.dev357/fixing-common-initial-errors-in-a-nest-js-project-d9683c31e04c)
